@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@100;300;900&display=swap');
+
+
+*{
+  font-family: 'Dancing Script', cursive;
+}
+.App {
+  text-align: center;
+}
+.container{
+ height: 100vh;
+ background-color: #827397;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #333;
+
+}
+
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border: 1px solid coral;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 0.08rem;
+}
+
+.form input, textarea{
+   width: 200px;
+   height: auto;
+   font-size: 20px;
+   font-weight: 100;
+   border-radius:3px ;
+   border: none;
+   outline: none;
+   color: #333;
+   font-family: 'Courier New', Courier, monospace;
+   margin: 10px;
+   
+}
+
+.form button{
+  padding: 10px;
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  transition: ease-in-out 0.3ms;
+  outline: none;
+  margin-bottom: 10px;
+
+  
+}
+
+.form button:hover {
+  transform: scale(1.1);
+}
+.containerNotepage{
+ 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+  background-color: #827397;
+}
+.NotePage{
+  margin: 50px;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.notes{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  color: #fff;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  padding-top: 30px;
+
+}
+
+.note{
+  border-radius: 5px;
+ display: flex;
+ flex-direction: column;
+ padding: 20px 20px;
+ height: auto;
+ width: 150px;
+ border: 1px solid #363062;
+ margin: 50px;
+ box-shadow: -6px 19px 5px 0px rgba(0,0,0,0.27);
+ -webkit-box-shadow: -6px 19px 5px 0px rgba(0,0,0,0.27);
+ -moz-box-shadow: -6px 19px 5px 0px rgba(0,0,0,0.27);
+ background-color: rgb(77, 76, 125);
+}
+.note h4{
+  font-weight: 100;
+  font-size: 20px;
+  height: 100px;
+  overflow: scroll;
+  
+}
+
+.note button {
+
+  border-radius: 5px;
+  padding: 6px;
+  background-color: #E9D5CA;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete{
+  font-size: 20px;
+}
+.delete:hover {
+  background-color: #F24C4C;
+}
+
+.update:hover {
+  background-color: #36AE7C;
+}
+
+
+.NotePage .addNote{
+  margin-bottom: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color:#E9D5CA;
+  border: 2px solid #363062;
+  margin-top: 20px;
+ 
+  font-size: 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .notes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: #fff;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    
+  }
+  .container {
+    
+    overflow: visible;
+  }
+
+  .animationDelete{
+    transform: rotateX(-80px);
+  }
+}
+
+.navbar{
+  min-height: 70px;
+  min-width: 100vw;
+  text-align: center;
+  background-color: #363062;
+  color: #E9D5CA;
+ 
+ 
+}
+
+.navbar h1{
+  font-weight: 100;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5rem;
+
+}
+
+.formUpdate{
+  height: 450px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid salmon;padding: 30px;
+}
+
+.formContainer {
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #827397;
+}
+.formUpdate input{
+  padding: 10px 30px;
+  font-size: 20px;
+
+  
+}
+
+a  {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 20px
+}
+
+.formUpdate  button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  padding:10 20px;
+  width: 100px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: salmon ;
+}
+.formUpdate  h1{
+  font-size: 50px;
+  color: salmon;
+  letter-spacing: 0.1em;
+}
