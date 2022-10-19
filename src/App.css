@@ -175,6 +175,11 @@
   .animationDelete{
     transform: rotateX(-80px);
   }
+  
+  .form  {
+    border:none;
+    
+  }
 }
 
 .navbar{
