@@ -58,6 +58,11 @@ const Notes= () => {
                 Update
               </Link>
             </button>
+            <button className="add">
+        <Link to="/add" style={{ color: "inherit", textDecoration: "none" }}>
+          Add new Plan
+        </Link>
+      </button>
           </div>
         ))}
       </div>
