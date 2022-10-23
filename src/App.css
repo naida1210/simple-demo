@@ -170,6 +170,7 @@
   .container {
     
     overflow: visible;
+    height:100vh;
   }
 
   .animationDelete{
@@ -179,6 +180,12 @@
   .form  {
     border:none;
     
+  }
+  
+    .navbar {
+    font-size: 18px;
+    height: 30px;
+
   }
 }
 
